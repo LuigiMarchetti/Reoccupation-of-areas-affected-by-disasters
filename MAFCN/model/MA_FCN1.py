@@ -299,7 +299,7 @@ class NetFB(nn.Module):
         self.AFC = nn.Conv2d(channels[0], self.class_num, kernel_size=1, stride=1)
 
         self._initialize_weights()
-        self.features.load_state_dict(torch.load('../pretrained_model/vgg16bn-encoder.pkl'))
+        self.features.load_state_dict(torch.load('C:\\Projects\\Processamento trab final\\MAFCN\\pretrained_model\\vgg16bn-encoder.pkl'))
 
     def _initialize_weights(self):
         for m in self.modules():
